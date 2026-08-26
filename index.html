@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beirut by Najem — Restaurant Libanais à Paris</title>
+  <meta name="description" content="Beirut by Najem : restaurant libanais à Paris. Mezzés faits maison, grillades et douceurs orientales. Découvrez notre menu.">
+  <meta name="theme-color" content="#1b1a17">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%231b1a17'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%23c2a15b' font-family='Georgia'>B</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container">
+      <a href="#accueil" class="brand">Beirut <span>by Najem</span></a>
+
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#menu">Notre menu</a></li>
+        <li><a href="#infos">Infos pratiques</a></li>
+        <li><a href="#contact" class="btn btn-gold btn-small">Réserver</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================= HERO ============================= -->
+  <section id="accueil" class="hero">
+    <div class="hero-content container">
+      <p class="hero-kicker">Restaurant libanais · Paris</p>
+      <h1>Beirut <em>by Najem</em></h1>
+      <p class="hero-tagline">La générosité des saveurs du Liban,<br>servie dans un cadre raffiné.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-gold">Découvrir le menu</a>
+        <a href="#contact" class="btn btn-outline">Réserver une table</a>
+      </div>
+      <p class="hero-note">Cuisine faite maison · Produits frais · Mezzés à partager</p>
+    </div>
+  </section>
+
+  <!-- ============================= À PROPOS ============================= -->
+  <section id="a-propos" class="section about">
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <p class="section-kicker">Notre histoire</p>
+        <h2>Une invitation au pays du cèdre</h2>
+        <p>
+          Ouvert depuis Juillet 2026, Beirut by Najem célèbre la cuisine libanaise dans ce
+          qu'elle a de plus généreux : des mezzés colorés, des grillades parfumées et des
+          douceurs à la fleur d'oranger. Chaque assiette raconte une tradition familiale,
+          portée par la passion de notre chef, Najem.
+        </p>
+        <p>
+          Ici, tout est fait maison : houmous, falafels, pains et pâtisseries sont préparés
+          chaque matin avec des produits rigoureusement sélectionnés.
+        </p>
+        <ul class="about-highlights">
+          <li>Un nouveau lieu dédié aux recettes authentiques de Beyrouth</li>
+          <li>Des produits frais et une cuisine entièrement faite maison</li>
+          <li>Une carte pensée pour partager, en famille ou entre amis</li>
+        </ul>
+        <p class="about-signature">— Najem, chef et fondateur</p>
+      </div>
+
+      <div class="about-visual reveal" aria-hidden="true">
+        <div class="ornament">
+          <p class="ornament-star">✦</p>
+          <h3>Beirut by Najem</h3>
+          <p>Depuis 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= MENU ============================= -->
+  <section id="menu" class="section menu">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="section-kicker">La carte</p>
+        <h2>Notre Menu</h2>
+        <p>Des mezzés à partager aux plats grillés, à déguster en famille ou entre amis.</p>
+      </header>
+
+      <div class="menu-tabs reveal" role="tablist" aria-label="Catégories du menu">
+        <button class="tab is-active" data-filter="tout" role="tab">Tout</button>
+        <button class="tab" data-filter="entrees" role="tab">Entrées</button>
+        <button class="tab" data-filter="mezzes-froides" role="tab">Mezzés froides</button>
+        <button class="tab" data-filter="mezzes-chaudes" role="tab">Mezzés chaudes</button>
+        <button class="tab" data-filter="plats" role="tab">Plats</button>
+        <button class="tab" data-filter="desserts" role="tab">Desserts</button>
+      </div>
+
+      <div class="menu-groups">
+
+        <!-- Entrées -->
+        <div class="menu-group" data-category="entrees">
+          <h3 class="menu-group-title">Entrées</h3>
+          <div class="menu-list">
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Soupe de lentilles à la coriandre</h4>
+                <span class="dots"></span>
+                <span class="price">7 €</span>
+              </div>
+              <p>Lentilles corail, coriandre fraîche, citron pressé</p>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Fatteh de pois chiches</h4>
+                <span class="dots"></span>
+                <span class="price">9 €</span>
+              </div>
+              <p>Pois chiches, yaourt onctueux, pain croustillant, pignons</p>
+              <span class="badge">Végétarien</span>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Salade fattouche</h4>
+                <span class="dots"></span>
+                <span class="price">8 €</span>
+              </div>
+              <p>Légumes croquants, sumac, huile d'olive, pain grillé</p>
+              <span class="badge">Végétarien</span>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Kebbé nayé</h4>
+                <span class="dots"></span>
+                <span class="price">14 €</span>
+              </div>
+              <p>Tartare de bœuf libanais, boulgour, oignons, menthe fraîche</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Mezzés froides -->
+        <div class="menu-group" data-category="mezzes-froides">
+          <h3 class="menu-group-title">Mezzés froides</h3>
+          <div class="menu-list">
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Houmous beiruti</h4>
+                <span class="dots"></span>
+                <span class="price">7 €</span>
+              </div>
+              <p>Purée de pois chiches, tahini, citron, persil, huile d'olive</p>
+              <span class="badge">Végétarien</span>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Moutabal</h4>
+                <span class="dots"></span>
+                <span class="price">8 €</span>
+              </div>
+              <p>Caviar d'aubergines fumées, tahini, yaourt, grenade</p>
+              <span class="badge">Végétarien</span>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Taboulé libanais</h4>
+                <span class="dots"></span>
+                <span class="price">8 €</span>
+              </div>
+              <p>Persil plat, menthe, tomates, boulgour fin, citron</p>
+              <span class="badge">Végétarien</span>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Labneh, huile d'olive &amp; zaatar</h4>
+                <span class="dots"></span>
+                <span class="price">8 €</span>
+              </div>
+              <p>Fromage frais égoutté, huile d'olive, thym sauvage</p>
+              <span class="badge">Végétarien</span>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Feuilles de vigne farcies</h4>
+                <span class="dots"></span>
+                <span class="price">9 €</span>
+              </div>
+              <p>Riz, herbes fraîches, huile d'olive, citron — servies tièdes</p>
+              <span class="badge">Végétarien</span>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Mouhamara</h4>
+                <span class="dots"></span>
+                <span class="price">8 €</span>
+              </div>
+              <p>Poivrons rouges, noix, mélasse de grenade, piment doux</p>
+              <span class="badge">Végétarien</span>
+            </article>
+          </div>
+        </div>
+
+        <!-- Mezzés chaudes -->
+        <div class="menu-group" data-category="mezzes-chaudes">
+          <h3 class="menu-group-title">Mezzés chaudes</h3>
+          <div class="menu-list">
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Falafels maison</h4>
+                <span class="dots"></span>
+                <span class="price">8 €</span>
+              </div>
+              <p>Boulettes de pois chiches, herbes, crème de tahini</p>
+              <span class="badge">Végétarien</span>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Kebbé frits</h4>
+                <span class="dots"></span>
+                <span class="price">9 €</span>
+              </div>
+              <p>Croûte de boulgour, cœur de bœuf haché, pignons</p>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Samboussek à la viande</h4>
+                <span class="dots"></span>
+                <span class="price">9 €</span>
+              </div>
+              <p>Chaussons dorés, farce de bœuf, oignons, pignons</p>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Rakakat au fromage</h4>
+                <span class="dots"></span>
+                <span class="price">8 €</span>
+              </div>
+              <p>Rouleaux croustillants au fromage fondant</p>
+              <span class="badge">Végétarien</span>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Arayes</h4>
+                <span class="dots"></span>
+                <span class="price">9 €</span>
+              </div>
+              <p>Pain libanais grillé, viande hachée épicée, herbes</p>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Chou-fleur frit, sauce tahini</h4>
+                <span class="dots"></span>
+                <span class="price">7 €</span>
+              </div>
+              <p>Bouquets dorés, crème de sésame, persil, grenade</p>
+              <span class="badge">Végétarien</span>
+            </article>
+          </div>
+        </div>
+
+        <!-- Plats -->
+        <div class="menu-group" data-category="plats">
+          <h3 class="menu-group-title">Plats</h3>
+          <div class="menu-list">
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <span class="dots"></span>
+                <span class="price">24 €</span>
+              </div>
+              <p>Grillades mixtes : brochettes d'agneau, taouk, kafta, riz</p>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Chawarma de poulet</h4>
+                <span class="dots"></span>
+                <span class="price">16 €</span>
+              </div>
+              <p>Poulet mariné, sauce à l'ail, riz parfumé, salade</p>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Taouk</h4>
+                <span class="dots"></span>
+                <span class="price">17 €</span>
+              </div>
+              <p>Brochettes de poulet mariné, ail, citron, pommes de terre</p>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Kafta grillée</h4>
+                <span class="dots"></span>
+                <span class="price">18 €</span>
+              </div>
+              <p>Brochettes de bœuf haché, persil, oignons, riz</p>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Côtelettes d'agneau</h4>
+                <span class="dots"></span>
+                <span class="price">22 €</span>
+              </div>
+              <p>Grillées au feu de bois, herbes du Liban, légumes</p>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Moussaka libanaise</h4>
+                <span class="dots"></span>
+                <span class="price">15 €</span>
+              </div>
+              <p>Aubergines, pois chiches, tomates, menthe sèche</p>
+              <span class="badge">Végétarien</span>
+            </article>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-group" data-category="desserts">
+          <h3 class="menu-group-title">Desserts</h3>
+          <div class="menu-list">
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Mouhalabieh</h4>
+                <span class="dots"></span>
+                <span class="price">7 €</span>
+              </div>
+              <p>Flan à la fleur d'oranger, sirop, pistaches concassées</p>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Baklawa aux pistaches</h4>
+                <span class="dots"></span>
+                <span class="price">7 €</span>
+              </div>
+              <p>Feuilles croustillantes, pistaches, sirop parfumé</p>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Osmalieh</h4>
+                <span class="dots"></span>
+                <span class="price">8 €</span>
+              </div>
+              <p>Cheveux d'ange dorés, fromage fondant, sirop de fleur d'oranger</p>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Riz bi halib</h4>
+                <span class="dots"></span>
+                <span class="price">6 €</span>
+              </div>
+              <p>Riz au lait crémeux, eau de fleur d'oranger</p>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Café libanais</h4>
+                <span class="dots"></span>
+                <span class="price">3 €</span>
+              </div>
+              <p>Servi à la cardamome, accompagné d'une pâtisserie</p>
+            </article>
+
+            <article class="menu-item reveal">
+              <div class="item-top">
+                <h4>Thé à la menthe fraîche</h4>
+                <span class="dots"></span>
+                <span class="price">4 €</span>
+              </div>
+              <p>Menthe du jardin, pignons, pour terminer en douceur</p>
+            </article>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="menu-note reveal">Nos plats sont préparés sur place. Merci de signaler toute allergie ou intolérance à notre équipe.</p>
+    </div>
+  </section>
+
+  <!-- ============================= INFOS ============================= -->
+  <section id="infos" class="section infos">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="section-kicker">Infos pratiques</p>
+        <h2>Nous trouver</h2>
+      </header>
+
+      <div class="infos-grid">
+        <div class="info-card reveal">
+          <p class="info-icon" aria-hidden="true">⏱</p>
+          <h3>Horaires</h3>
+          <p>
+            Mardi – Dimanche<br>
+            12h00 – 14h30<br>
+            19h00 – 22h30
+          </p>
+          <p class="info-muted">Fermé le lundi</p>
+        </div>
+
+        <div class="info-card reveal">
+          <p class="info-icon" aria-hidden="true">✆</p>
+          <h3>Adresse</h3>
+          <address>
+            12 rue de la République<br>
+            75011 Paris<br>
+            <a href="tel:+33142567890">01 42 56 78 90</a>
+          </address>
+        </div>
+
+        <div class="info-card reveal">
+          <p class="info-icon" aria-hidden="true">✉</p>
+          <h3>Réservations</h3>
+          <p>
+            Pour toute réservation,<br>
+            contactez-nous par téléphone<br>
+            ou par e-mail.
+          </p>
+
+          <p><a href="mailto:contact@beirutbynajem.fr">contact@beirutbynajem.fr</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= CONTACT / CTA ============================= -->
+  <section id="contact" class="cta-band">
+    <div class="container reveal">
+      <h2>Une envie de voyage culinaire&nbsp;?</h2>
+      <p>Réservez votre table et laissez-vous transporter au cœur des saveurs du Liban.</p>
+      <a href="tel:+33142567890" class="btn btn-dark">Réserver au 01 42 56 78 90</a>
+    </div>
+  </section>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-brand">Beirut <span>by Najem</span></p>
+      <p>Restaurant libanais — Paris</p>
+      <p class="footer-small">© 2026 Beirut by Najem. Tous droits réservés. · <a href="#accueil">Retour en haut</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
