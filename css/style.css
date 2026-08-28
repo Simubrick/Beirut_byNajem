@@ -720,3 +720,351 @@ a:hover {
     font-size: 0.8rem;
   }
 }
+
+/* =============================================
+   BLOC RÉFÉRENCE — AVIS GOOGLE + FOOTER
+   (ajouté séparément, règles existantes intactes)
+   ============================================= */
+:root {
+  --ink: #182524;
+  --night: #1F3A3D;
+  --night-2: #254B4C;
+  /* --cream retiré pour ne pas écraser la valeur d'origine */
+  --card: #FBF7EE;
+  --brass: #B98D4D;
+  --brass-light: #E3C489;
+  --pomegranate: #A83E2C;
+  --olive: #5C6B3F;
+  --muted: #786B57;
+  --line: rgba(185,141,77,0.35);
+}
+
+.lattice {
+  background-image:
+    repeating-linear-gradient(45deg, var(--brass-light) 0, var(--brass-light) 1px, transparent 1px, transparent 26px),
+    repeating-linear-gradient(-45deg, var(--brass-light) 0, var(--brass-light) 1px, transparent 1px, transparent 26px);
+  background-size: 26px 26px;
+  opacity: 0.10;
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.arabic {
+  font-family: 'Noto Naskh Arabic', serif;
+}
+
+/* ---------- Avis Google ---------- */
+.reviews {
+  background: var(--night);
+  color: var(--cream);
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0;
+}
+
+.reviews .lattice {
+  position: absolute;
+  inset: 0;
+}
+
+.reviews .wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.rev-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.rev-score {
+  text-align: right;
+}
+
+.rev-score b {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.4rem;
+  color: var(--brass-light);
+  font-weight: 600;
+}
+
+.rev-score span {
+  display: block;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: rgba(243,235,218,0.6);
+  text-transform: uppercase;
+}
+
+.rev-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.rev-card {
+  border-top: 1px solid rgba(227,196,137,0.35);
+  padding-top: 24px;
+}
+
+.rev-card .stars {
+  color: var(--brass-light);
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+}
+
+.rev-card p {
+  margin-top: 16px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: rgba(243,235,218,0.92);
+  line-height: 1.5;
+}
+
+.rev-card .who {
+  margin-top: 18px;
+  font-size: 0.78rem;
+  color: rgba(243,235,218,0.55);
+  letter-spacing: 0.04em;
+}
+
+/* ---------- Footer (référence) ---------- */
+footer {
+  background: var(--ink);
+  color: rgba(243,235,218,0.6);
+  padding: 64px 0 32px;
+}
+
+.foot-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(227,196,137,0.15);
+}
+
+.foot-brand {
+  max-width: 340px;
+}
+
+.foot-brand .brandmark {
+  color: var(--cream);
+  margin-bottom: 14px;
+}
+
+.foot-brand p {
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.foot-cols {
+  display: flex;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+.foot-col h4 {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brass-light);
+  margin-bottom: 16px;
+}
+
+.foot-col a,
+.foot-col p {
+  display: block;
+  font-size: 0.88rem;
+  margin-bottom: 10px;
+  color: rgba(243,235,218,0.7);
+  transition: color .2s;
+}
+
+.foot-col a:hover {
+  color: var(--brass-light);
+}
+
+.foot-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 26px;
+  font-size: 0.76rem;
+  color: rgba(243,235,218,0.4);
+}
+
+.eyebrow {
+  font-family: 'Jost', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--brass);
+}
+
+.brandmark {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.28rem;
+  font-weight: 600;
+  color: var(--cream);
+  letter-spacing: 0.03em;
+}
+
+.brandmark .ar {
+  color: var(--brass-light);
+  font-size: 1.05rem;
+}
+
+@media (max-width: 860px) {
+  .rev-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .foot-grid {
+    flex-direction: column;
+  }
+}
+
+/* ---------- Section Avis (style original du site) ---------- */
+.avis {
+  background: var(--white);
+}
+
+.avis-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.avis-card {
+  background: var(--cream);
+  padding: 35px 28px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border-top: 2px solid var(--gold);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.avis-stars {
+  color: var(--gold);
+  letter-spacing: 3px;
+  font-size: 0.95rem;
+}
+
+.avis-card p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--charcoal);
+}
+
+.avis-who {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+@media (max-width: 860px) {
+  .avis-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Footer (style original du site) ---------- */
+footer {
+  background: var(--charcoal);
+  color: rgba(247, 242, 233, 0.75);
+  padding: 64px 0 32px;
+}
+
+.foot-grid {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(194, 161, 91, 0.25);
+}
+
+.foot-brand .brandmark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0;
+}
+
+.foot-brand .brandmark .ar {
+  color: var(--gold);
+  font-size: 1.2rem;
+}
+
+.foot-brand p {
+  font-size: 0.94rem;
+  color: rgba(247, 242, 233, 0.75);
+  line-height: 1.65;
+}
+
+.foot-col h4 {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.foot-col a,
+.foot-col p {
+  display: block;
+  font-size: 0.94rem;
+  margin-bottom: 10px;
+  color: rgba(247, 242, 233, 0.7);
+  transition: color 0.3s ease;
+}
+
+.foot-col a:hover {
+  color: var(--gold-light);
+}
+
+.foot-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 26px;
+  font-size: 0.82rem;
+  color: rgba(247, 242, 233, 0.5);
+}
+
+.foot-brand .brandmark span {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.foot-bottom {
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 861px) {
+  .phone-link {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+  }
+}
