@@ -1068,3 +1068,91 @@ footer {
     text-decoration: none;
   }
 }
+
+/* ---------- Formulaire de réservation ---------- */
+.reservation-form {
+  max-width: 720px;
+  margin: 44px auto 0;
+  padding: 44px 40px;
+  background: var(--white);
+  border: 1px solid rgba(27, 26, 23, 0.06);
+  border-top: 3px solid var(--gold);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 22px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-full {
+  grid-column: 1 / -1;
+}
+
+.reservation-form label {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1px solid var(--cream-dark);
+  border-radius: 8px;
+  background: var(--cream);
+  color: var(--text);
+  font-family: 'Jost', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  appearance: none;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus,
+.reservation-form textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(194, 161, 91, 0.15);
+  background: var(--white);
+}
+
+.reservation-form textarea {
+  resize: vertical;
+}
+
+.reservation-form .btn {
+  width: 100%;
+  margin-top: 28px;
+  padding: 15px 28px;
+  font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .field-full {
+    grid-column: auto;
+  }
+
+  .reservation-form {
+    padding: 32px 24px;
+  }
+}

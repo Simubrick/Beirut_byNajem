@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merci — Beirut by Najem</title>
+  <meta name="description" content="Confirmation de demande de réservation — Beirut by Najem.">
+  <meta name="theme-color" content="#1b1a17">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%231b1a17'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%23c2a15b' font-family='Georgia'>B</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    body.thanks-page {
+      background: var(--cream);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .thanks {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 24px;
+    }
+
+    .thanks-card {
+      max-width: 620px;
+      width: 100%;
+      margin: 0 auto;
+      background: var(--white);
+      border: 1px solid rgba(27, 26, 23, 0.06);
+      border-top: 3px solid var(--gold);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      padding: 56px 32px;
+    }
+
+    .thanks-card h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.6rem, 5vw, 3.6rem);
+      color: var(--charcoal);
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+
+    .thanks-card .thanks-message {
+      font-size: 1.25rem;
+      color: var(--charcoal);
+      margin: 0 0 14px;
+    }
+
+    .thanks-card .thanks-detail {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0 0 28px;
+    }
+  </style>
+</head>
+<body class="thanks-page">
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="brand">Beirut <span>by Najem</span></a>
+    </nav>
+  </header>
+
+  <main class="thanks">
+    <div class="container">
+      <div class="thanks-card">
+        <p class="section-kicker">Réservation</p>
+        <h1>Merci&nbsp;!</h1>
+        <p class="thanks-message">Votre demande de réservation a bien été envoyée.</p>
+        <p class="thanks-detail">
+          Vous recevrez un e-mail de confirmation de votre réservation.<br>
+          À très bientôt chez Beirut by Najem.
+        </p>
+        <a href="index.html" class="btn btn-gold">Retour à l'accueil</a>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

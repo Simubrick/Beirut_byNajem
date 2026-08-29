@@ -478,6 +478,49 @@
       <h2>Une envie de voyage culinaire&nbsp;?</h2>
       <p>Réservez votre table et laissez-vous transporter au cœur des saveurs du Liban.</p>
       <a href="tel:+33651265555" class="btn btn-dark phone-link" tabindex="-1">Réserver au 06 51 26 55 55</a>
+
+      <form name="reservation" method="POST" data-netlify="true" action="/merci/" class="reservation-form">
+      <input type="hidden" name="form-name" value="reservation">
+      <div class="form-grid">
+        <div class="field">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" required autocomplete="name" placeholder="Votre nom">
+        </div>
+        <div class="field">
+          <label for="phone">Téléphone</label>
+          <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="06 51 26 55 55">
+        </div>
+        <div class="field">
+          <label for="date">Date de réservation</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="field">
+          <label for="time">Heure de réservation</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="field">
+          <label for="guests">Nombre de convives</label>
+          <select id="guests" name="guests" required>
+            <option value="">Sélectionner...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10+">10+</option>
+          </select>
+        </div>
+        <div class="field field-full">
+          <label for="message">Demandes particulières ou commentaires</label>
+          <textarea id="message" name="message" rows="4" placeholder="Allergies, occasion spéciale, accessibilité..."></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-gold">Envoyer la demande</button>
+      </form>
     </div>
   </section>
 
